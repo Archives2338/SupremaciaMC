@@ -181,7 +181,7 @@ am4core.ready(function() {
   // console.log(groupDatas);
 
   
-
+  //TIENE QUE SER POR API GET
   var groupData = [
     {
       "name": "Argentina",
@@ -228,6 +228,7 @@ am4core.ready(function() {
           "id": "BO", // With MapPolygonSeries.useGeodata = true, it will try and match this id, then apply the other properties as custom data
           "customData": "Auditorio Biblioteca Nacional",
           "capital": "Sucre",
+          "json":"boliviaLow",
           "latitude": -19.0421,
           "longitude": -65.2559,
           "bandera": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Bolivia_%28state%29.svg/800px-Flag_of_Bolivia_%28state%29.svg.png",
@@ -451,6 +452,8 @@ am4core.ready(function() {
       ]
     }
   ];
+
+  //-
   console.log(tempData);
   console.log(groupData);
   var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
@@ -1279,7 +1282,7 @@ function animateBullet(circle) {
     })
 }
 
-
+//API GET
 imageSeries.data = [        
   {
     "minZoomLevel": 4,
