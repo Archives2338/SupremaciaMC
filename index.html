@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supremacia</title>
+  <!-- GLIDER -->
+  <link rel="stylesheet" href="assets/css/glider.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Resources Map-->
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="assets/map/core.js"></script>
+  <script src="assets/map/maps.js"></script>
+  <script src="assets/map/worlLow.js"></script>
+  <script src="assets/map/animated.js"></script>
+  <script src="assets/js/mapasupremacia.js"></script>
+</head>
+<body>
+  
+    <!-- HEADER -->
+    <header class="header">
+      <div class="contenedor-header">
+          <div class="logo">
+            <a href="#" class="logo-a"><img src="assets/img/supremacia_reducido.svg" alt="" class="img-logo"></a>
+            <h1><span>#</span>Supremate</h1>
+          </div>
+          <div class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- <a href=""><img src="assets/img/redes/Facebook-icono.svg" alt=""></a>
+            <a href=""><img src="assets/img/redes/Twitter-icono.svg" alt=""></a>
+            <a href=""><img src="assets/img/redes/Youtube-icono.svg" alt=""></a>
+            <a href=""><img src="assets/img/redes/Instagram-icono.svg" alt=""></a> -->
+          </div>
+      </div>
+      <nav class="menu">
+        <a href="#section-noticias"><div class="item-noticia">Noticias</div></a>
+        <!-- <a href="#"><div class="item">Ranking SMC</div></a> -->
+        <a href="#"><div class="item">Tabla</div></a>
+        <a href="#"><div class="item">Salon de la fama</div></a>
+        <a href="#"><div class="item">Videos</div></a>
+        <a href="#"><div class="item">Tienda</div></a>
+      </nav>
+      <section class="section-mapa">
+        <h3>Descubre el universo supremacia</h3>
+        <div id="chartdiv" >
+        </div>
+        <div class="txt">
+          <h4 class="txt1">Descubre</h4>
+          <h4 class="txt2">el universo</h4>
+          <h4 class="txt3">supremacia</h4>
+        </div>          
+      </section>
+    </header>
+    <!-- ENDHEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <section class="section-noticias" id="section-noticias">
+        <h3>Noticias destacadas</h3>
+        <div class="contenedor-noticiaprincipal">
+          <div class="card-principal">
+            <a href="#" class="contenedor-a">
+              <div class="contenedor-item">
+                <h2 class="contenedor-txt1">Revive la final</h2>
+                <h2 class="contenedor-txt2">Internacional 2021</h2>
+                <h2 class="linea"><hr></h2>
+                <img class="contenedor-img" src="https://diariocorreo.pe/resizer/7RZoYfZ_5fFMOVA9OoNaqMKObgs=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/4K3BKDEYAJEGLKHKGABGO4CWQA.jpg" alt="">
+              </div>
+            </a>
+            <div class="contenedor-boton">
+              <a href="#" class="aboton" id="aboton">                
+                Ver más <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contenidocaro">
+          <div class="contenedor-noticias">
+            <div class="carousel-contenedor">
+
+              <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>    
+
+              <div class="carousel__lista">              
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+                <div class="carousel__elemento">
+                  <a href="#">
+                    <div class="carousel__item">
+                      <div class="item1__p">
+                        <p class="item1__p1">Final Nacional 2021</p>
+                        <p class="item1__p2">Auditoria Biblioteca Nacional, Lima</p>
+                      </div>
+                      <img class="carousel__img" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> 
+              </div>
+      
+              <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <!-- <div role="tablist" class="carousel__indicadores"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section3">
+        <div class="banner">
+          <div class="content">
+            <div class="smc">
+              <img src="assets/img/EMECE.svg" alt="">
+              <h3 class="smc1">Supremacia</h3>
+              <h3 class="smc2">Supremacia</h3>
+              <h3 class="smc3">Supremacia</h3>
+              <h3 class="smc4">Supremacia</h3>
+              <h3 class="smc5">Supremacia</h3>
+              <h3 class="smc6">Supremacia</h3>
+              <h3 class="smc7">Supremacia</h3>
+            </div>
+            <div class="contentBx">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet tempora provident dolore iste a, magni architecto officia! Eos, quidem?</p>
+              <hr class="linea" color="#f19e00"/>
+            </div>
+            <div class="contentBx2">
+              <p>22 países - 4 continentes - 6 años</p>
+              <p>Presente en toda hispanoamérica.</p>
+            </div>
+            <div classs="imgBx">
+              <img src="assets/img/micro.svg" alt="">
+            </div>
+          </div>
+        </div>        
+      </section>
+
+      <section class="section4">
+        <div class="titulo4">
+          <h3 class="titulo4-1">Prueba</h3>
+          <div class="titulo4-2">
+            <h3 class="titulo4-2-1">Nuestro<span>.</span></h3>
+            <h3 class="titulo4-2-2">Filtro</h3>
+          </div>          
+        </div>
+        <div class="content-filtros">
+          <div class="contenedor4-cards">
+            <div class="card">
+              <div class="card-image"><img src="assets/img/imagen2.jpg" alt=""></div>
+              <div class="card-text">
+                <h2>Post One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image"><img src="assets/img/imagen2.jpg" alt=""></div>
+              <div class="card-text">
+                <h2>Post Two</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image"><img src="assets/img/imagen2.jpg" alt=""></div>
+              <div class="card-text">
+                <h2>Post Three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>          
+          </div>
+        </div>
+        <div class="masinfo-filtros">
+          <a href="#">
+            <div class="h2p">Más info </div>
+            <div class="icon"><i class="fas fa-arrow-right"></i></div>
+          </a>            
+        </div>
+      </section>
+
+      <section class="section5">
+        <div class="titulo5">
+          <h3 class="titulo5-1">Conoce a</h3>
+          <div class="titulo5-2">
+            <h3 class="titulo5-2-1">Nuestros<span>.</span></h3>
+            <h3 class="titulo5-2-2">Campeones</h3>
+          </div>          
+        </div>
+        <div class="contenidocaro2">
+          <div class="contenedor-noticias">
+            <div class="carousel-contenedor2">
+
+              <button aria-label="Anterior" class="carousel__anterior2">
+                <i class="fas fa-chevron-left"></i>
+              </button>    
+
+              <div class="carousel__lista2">              
+                <!-- <div class="carousel__elemento2">
+                  <a href="#">
+                    <div class="carousel__item2">
+                      <div class="item2__p">
+                        <p class="item2__p1">Titulo</p>
+                        <p class="item2__p2">Subtitulo</p>
+                      </div>
+                      <img class="carousel__img2" src="assets/img/imagen2.jpg" alt="">
+                    </div>
+                  </a>
+                </div> -->
+              </div>
+      
+              <button aria-label="Siguiente" class="carousel__siguiente2">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <!-- <div role="tablist" class="carousel__indicadores"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section6"> 
+        <div class="contenedor-noticiaprincipal2">
+          <div class="card-principal2">
+            <a href="#" class="contenedor-a2">
+              <div class="contenedor-item2">
+                <img class="img2" src="assets/img/instagram1.png" alt="">
+                <img class="img1" src="assets/img/mobile-frame.png" alt="">                
+              </div>
+            </a>
+          </div>
+          <div class="card-principal2">
+            <a href="#" class="contenedor-a2">
+              <div class="contenedor-item2">
+                <img class="img2" src="assets/img/instagram1.png" alt="">
+                <img class="img1" src="assets/img/mobile-frame.png" alt="">                
+              </div>
+            </a>
+          </div>
+          <div class="card-principal2">
+            <a href="#" class="contenedor-a2">
+              <div class="contenedor-item2">
+                <img class="img2" src="assets/img/instagram1.png" alt="">
+                <img class="img1" src="assets/img/mobile-frame.png" alt="">                
+              </div>
+            </a>
+          </div>
+        </div>       
+      </section>
+    </main>
+    <!-- ENDHEADER -->
+
+    <!-- FOOTER -->
+    <!-- ENDFOOTER -->
+
+    <!-- MAIN JS -->
+    <script src="assets/js/glider.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
